@@ -2,11 +2,12 @@ import { useEffect } from "react";
 import ShopNav from "../components/Shop/ShopNav";
 import Footer from "../components/Footer/Footer";
 import Search from "../components/Search";
-import Products from "../components/Shop/Products";
-import Sort from "../components/Sort";
+import ProductList from "../components/Shop/ProductList";
+import Sort from "../components/Shop/Sort";
 import { useActions } from "../hooks/useActions";
 import { useTypedSelector } from "../hooks/useTypedSelector";
-import ProductHeader from "../components/Header/ProductHeader";
+import Header from "../components/Header";
+import Hero from "../components/Hero";
 
 const Shop = () => {
   const { products } = useTypedSelector((state) => state.products);
@@ -20,11 +21,12 @@ const Shop = () => {
 
   return (
     <div className="h-screen bg-slate-200">
-      <ProductHeader />
+      <Header />
+      <Hero />
       <ShopNav />
       <Search />
       {/* <Sort /> */}
-      <Products />
+      <ProductList />
       <Footer />
     </div>
   );

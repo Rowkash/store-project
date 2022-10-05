@@ -3,7 +3,7 @@ import Nav from "./Nav";
 
 const Header = () => {
   return (
-    <div className="absolute w-full">
+    <div className="w-full">
       <Banner />
       <Nav />
     </div>

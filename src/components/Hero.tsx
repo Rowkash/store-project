@@ -1,4 +1,4 @@
-const logo = require("../../assets/bg.jpg");
+import logo from "../assets/bg.jpg";
 
 const Hero = () => {
   return (

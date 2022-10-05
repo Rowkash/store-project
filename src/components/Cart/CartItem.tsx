@@ -3,12 +3,13 @@ import { Link } from "react-router-dom";
 import { useActions } from "../../hooks/useActions";
 import { PropsCartTypes } from "../../redux/cart/types";
 
-const CartDisplay = ({ image, quantity, name, price, id }: PropsCartTypes) => {
+const CartItem = ({ image, quantity, name, price, id }: PropsCartTypes) => {
   const {
     increaseCartQuantity,
     subtractCartQuantity,
     addToTotal,
     subtractFromTotal,
+    displayCart,
   } = useActions();
 
   const addQuantityToCart = () => {
@@ -25,7 +26,8 @@ const CartDisplay = ({ image, quantity, name, price, id }: PropsCartTypes) => {
     <div className="flex justify-between space-x-6 items-center mx-4 my-4">
       <Link
         to={`/product/${id}`}
-        className="w-1/5 shadow-md hover:opacity-75 hover:border hover:border-gray-300"
+        className="w-1/5 shadow-md hover:opacity-75 hover:border-gray-300"
+        onClick={() => displayCart()}
       >
         <img src={image} alt="" />
       </Link>
@@ -59,4 +61,4 @@ const CartDisplay = ({ image, quantity, name, price, id }: PropsCartTypes) => {
   );
 };
 
-export default CartDisplay;
+export default CartItem;

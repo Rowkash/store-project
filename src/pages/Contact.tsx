@@ -1,10 +1,10 @@
 import Form from "../components/Form";
-import ProductHeader from "../components/Header/ProductHeader";
+import Header from "../components/Header";
 
 const Contact = () => {
   return (
     <div>
-      <ProductHeader />
+      <Header />
       <Form />
     </div>
   );

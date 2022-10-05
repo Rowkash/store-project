@@ -1,4 +1,4 @@
-import { SortProperty } from "../redux/filter/types";
+import { SortProperty } from "../../redux/filter/types";
 
 const list = [
   { name: "Rating", sortProperty: SortProperty.RATING },

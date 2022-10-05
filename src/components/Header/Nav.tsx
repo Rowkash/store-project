@@ -5,7 +5,7 @@ const Nav = () => {
   const { displayCart } = useActions();
 
   return (
-    <nav className="flex h-18 py-4 w-full m-auto text-white">
+    <nav className="flex h-18 py-4 w-screen m-auto text-white bg-gradient-to-r from-neutral-400 via-cyan-900 to-blue-500">
       <Link to="/">
         <h1 className="transform duration-300 hover:-translate-y-1 font-display font-thin tracking-wide m-auto pl-4 md:pl-12 text-2xl md:text-5xl">
           AllStore
