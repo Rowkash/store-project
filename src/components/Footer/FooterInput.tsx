@@ -1,9 +1,9 @@
 const FooterInput = () => {
-  return (
-    <div className="md:mb-6">
-      <input
-        type="text"
-        className="
+	return (
+		<div className='md:mb-6'>
+			<input
+				type='text'
+				className='
               form-control
               block
               w-full
@@ -19,12 +19,12 @@ const FooterInput = () => {
               ease-in-out
               m-0
               focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
-            "
-        id="exampleFormControlInput1"
-        placeholder="Email address"
-      />
-    </div>
-  );
-};
+            '
+				id='exampleFormControlInput1'
+				placeholder='Email address'
+			/>
+		</div>
+	)
+}
 
-export default FooterInput;
+export { FooterInput }
